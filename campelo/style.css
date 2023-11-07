@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
+*{
+    font-family: 'Martian Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    
+    width: 250px;
+    height: 80px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header{
+    position: relative;
+    z-index: 2;
+    background-color: rgb(143, 34, 194);
+    margin: 0 auto;
+
+    
+}
+
+article{
+    width: 80%;
+    position: relative;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+}
+.cardapioCenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editBox{
+  color: black;
+  background-color: aliceblue;
+  width: 40%;
+  position: relative;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.navebar{
+    position: absolute;
+    right: 0;
+    top: 0px
+} 
+
+.navebar a{
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+   font-size: 14px;
+   display: block;
+   padding: 30px;
+   transition: 0.5s;
+}
+.navebar a:hover{
+    transition: 0.3s;
+    background-color: rgba(215, 62, 253, 0.281);
+    opacity: 1;
+    color: rgb(252, 109, 109);
+    text-decoration: none;
+
+ }
+
+.navebar ul li{
+    list-style: none;
+    float: right;
+    display: inline;
+    margin-right: 50px;
+}
+
+.PizzaBack
+{
+    opacity: 1;
+    width: 100%;
+    height: 600px;
+}
+
+.promocoes{
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    background-color: rgb(143, 34, 194);
+}
+
+.PIZZAS{
+    color:rgb(255, 255, 255);
+}
+
+.bodyBack{
+    background-color:rgb(255, 255, 255)
+}
+
+.carousel-inner{
+    background-color: rgb(226, 177, 43);
+}
+
+.SliderBorder{
+    background-color: rgb(255, 136, 0);
+}
+
+.ItensDoCardapio{
+    position: absolute;
+    margin-top: 20px;
+    right: 300px;
+}
+
+.ItensDoCardapioBaixo{
+    position: absolute;
+    margin-top: 40px;
+    text-align: center;
+    right: 235px;
+}
+.ItensDoCardapioBaixo2{
+    position: absolute;
+    margin-top: 60px;
+    text-align: center;
+    right: 500px;
+}
+
+.PizzaPreço{
+    position: absolute;
+    margin-top: -35px;
+    right: 40px;
+}
+
+.cardapio{
+    color: rgb(255, 255, 255);
+    background-color: rgb(143, 34, 194);
+}
+
+.localizacao{
+    color: rgb(255, 255, 255);
+    background-color: rgb(143, 34, 194);
+}
+
+.BACKGROUND{
+    background-color: rgb(0, 0, 0);
+}
+
+#mapacss{
+    margin: 100px;
+    margin-left: 30%;
+}
+
+#contato{
+  color: rgb(255, 255, 255);
+  background-color: rgb(143, 34, 194);
+}
+
+.contatoInfo{
+  width: 40px;
+}
+
+.Box{
+  border:solid;
+}
+
+/*card 3d*/
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #ffbb00;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #b94b29;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  /*snackbar */
+  #snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #00ff95; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 45%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  

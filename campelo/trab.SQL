@@ -1,0 +1,9 @@
+CREATE TABLE pizzas(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    imgurl VARCHAR(9999) NOT NULL,
+    pizzaname VARCHAR(50) NOT NULL,
+    preco DECIMAL(9,2) NOT NULL
+);
+
+
+CREATE 
